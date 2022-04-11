@@ -1,11 +1,11 @@
 # **Sign language Detection using Mediapipe and Convolutional Neural Networks**
 
-
-
 Datasets used:
 1. Akash, N. (2018) ‘ASL Alphabet: Image dataset for alphabets in the American Sign Language’ [Online] Available at: https://www.kaggle.com/grassknoted/asl-alphabet/metadata (Accessed: 22 December, 2021)
 2. Lee, D. (2020) ‘American Sign Language Letters Dataset’  [Online] Available at: https://public.roboflow.com/object-detection/american-sign-language-letters (Accessed: 22 December, 2021)
 3. Mondal, P. (2022) 'ASL alphabets' [Online] Available at: https://www.kaggle.com/pradiptomondal/aslalphabets
+
+To download the trained weight files used, click the [link] (https://drive.google.com/file/d/1mze1JcXY7FXsuP_K_-PUMPvXq95LasPD/view?usp=sharing)
 
 
 Datasets were collected from various sources and converted hand landmarks were extracted from them using mediapipe.
@@ -68,9 +68,10 @@ $ pip3 install -r requirements.txt
 ```
 
 4. Training the Mediapipe model
-    1. The landmarks are derived from the combination of these two datasets using mediapipe - [ASL-grassknotted](https://www.kaggle.com/grassknoted/asl-alphabet) and [Roboflow](https://public.roboflow.com/object-detection/american-sign-language-letters/1)
-    2. Store the dataset inside the 'mediapipe' folder, and navigate to this directory through the command line.
-    3. Train the model:
+    1. The landmarks are derived from the combination of these two datasets using mediapipe - [ASL-grassknotted](https://www.kaggle.com/grassknoted/asl-alphabet) and [Roboflow](https://public.roboflow.com/object-detection/american-sign-language-letters/1).
+    2. To download the preprocessed dataset, click this [link](https://drive.google.com/file/d/1n4YaAflCbuL8k6EEh7oGDQ_8C8Ml42Op/view?usp=sharing).
+    3. Unzip and store the dataset inside the 'mediapipe' folder, and navigate to this directory through the command line.
+    4. Train the model:
     ```
     $ python3 train.py dataset_path \
     --epochs 20 \
@@ -87,10 +88,10 @@ $ pip3 install -r requirements.txt
     -   Batch Size 32
 
 5. Training the CNN model
-    1. Download the image dataset from [ASL-grassknotted](https://www.kaggle.com/grassknoted/asl-alphabet) and [Roboflow](https://public.roboflow.com/object-detection/american-sign-language-letters/1)
-    These images are taken from the original dataset, organised into sub-directories and preprocessed.
-    2. Store the dataset inside the 'CNN' folder, and navigate to this directory through the command line.
-    3. Train the model:
+    1. The original image dataset is available from [ASL-grassknotted](https://www.kaggle.com/grassknoted/asl-alphabet) and [Roboflow](https://public.roboflow.com/object-detection/american-sign-language-letters/1)
+    2. To download the preprocessed dataset, click this [link](https://drive.google.com/file/d/1-BiUjZuo6zE2QJTLEb2XqqGucWQ1O0vg/view?usp=sharing)
+    3. Unzip and store the dataset inside the 'CNN' folder, and navigate to this directory through the command line.
+    4. Train the model:
     ```
     $ python3 train.py dataset_path model_name \
     --epochs 20 \
@@ -112,8 +113,8 @@ $ pip3 install -r requirements.txt
 
 
 
-
 ## Evaluation:
+To download the dataset click this [link](https://drive.google.com/file/d/1ick5XIMRIcSuzekz5-zudHbiz7Yebxnz/view?usp=sharing).
 The best results were achieved using CNN architectures of Resnet & Mobilenet.
 To evaluate these models on a test_dataset, run the script ```eval.py``` inside the ```CNN``` folder, with the following arguments:
 ```
