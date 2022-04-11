@@ -5,7 +5,7 @@ Datasets used:
 2. Lee, D. (2020) ‘American Sign Language Letters Dataset’  [Online] Available at: https://public.roboflow.com/object-detection/american-sign-language-letters (Accessed: 22 December, 2021)
 3. Mondal, P. (2022) 'ASL alphabets' [Online] Available at: https://www.kaggle.com/pradiptomondal/aslalphabets
 
-To download the trained weight files used, click the [link] (https://drive.google.com/file/d/1mze1JcXY7FXsuP_K_-PUMPvXq95LasPD/view?usp=sharing)
+To download the trained weight files used, click the [link](https://drive.google.com/file/d/1mze1JcXY7FXsuP_K_-PUMPvXq95LasPD/view?usp=sharing)
 
 
 Datasets were collected from various sources and converted hand landmarks were extracted from them using mediapipe.
